@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Barber's Village | The Art of a Clean Cut</title>
+<style>
+:root{--ink:#111;--paper:#f7f6f2;--muted:#777;--line:#e6e3dc;--white:#fff;--accent:#c6a56b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.demo{background:#171717;color:#fff;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.11em;text-transform:uppercase}.demo b{color:#e4c58e}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.brand{font-weight:900;font-size:18px;letter-spacing:.14em}.brand span{display:block;font-size:9px;letter-spacing:.34em;color:var(--muted);font-weight:500;margin-top:5px}.links{display:flex;gap:28px;font-size:12px;text-transform:uppercase;letter-spacing:.12em}.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:#111;color:white;padding:15px 22px;font-size:11px;text-transform:uppercase;letter-spacing:.13em;border:1px solid #111;transition:.2s}.navbtn:hover,.btn:hover{background:var(--accent);border-color:var(--accent);color:#111}.hero{min-height:610px;display:grid;grid-template-columns:1fr 1fr;background:#111;color:#fff}.hero-copy{padding:100px 9% 80px 14%;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(48px,6vw,82px);line-height:.98;margin:24px 0}.hero p{color:#c7c7c7;line-height:1.8;max-width:420px;font-size:14px}.hero-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}.btn.light{background:#fff;color:#111;border-color:#fff}.hero-image{min-height:500px;background:linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.05)),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1300&q=85') center/cover}.trust{display:flex;justify-content:center;gap:50px;padding:25px 15px;background:#fff;border-bottom:1px solid var(--line);flex-wrap:wrap}.trust div{text-align:center;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#555}.trust strong{display:block;font-family:Georgia,serif;font-size:22px;color:#111;letter-spacing:0;margin-bottom:5px}.section{padding:95px 8%}.section-head{text-align:center;max-width:650px;margin:0 auto 48px}.section h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(36px,4vw,52px);margin:13px 0}.section-head p,.intro p{color:var(--muted);line-height:1.8;font-size:14px}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:#fff;padding:30px;border:1px solid var(--line);min-height:190px}.service .num{font-family:Georgia,serif;color:var(--accent);font-size:28px}.service h3{font-family:Georgia,serif;font-size:23px;font-weight:400;margin:18px 0 8px}.service p{font-size:12px;color:var(--muted);line-height:1.7}.price{font-size:13px;font-weight:bold;margin-top:18px}.gallery{background:#111;color:#fff}.gallery .section-head p{color:#aaa}.photos{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:230px 230px;gap:12px}.photo{background-size:cover;background-position:center;min-height:180px}.photo:first-child{grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85')}.photo:nth-child(2){background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85')}.photo:nth-child(3){background-image:url('https://images.unsplash.com/photo-1593702295094-aea2c5f ಮ?auto=format&fit=crop&w=900&q=85')}.photo:nth-child(4){background-image:url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=85')}.photo:nth-child(5){background-image:url('https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=85')}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{background:#fff;padding:28px;border:1px solid var(--line)}.stars{color:#b18b4f;letter-spacing:3px}.review blockquote{font-family:Georgia,serif;font-size:20px;line-height:1.5;margin:18px 0}.review small{color:var(--muted);font-size:11px}.visit{background:#eae7df;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.visit h2{font-family:Georgia,serif;font-size:48px;font-weight:400;margin:12px 0}.visit p{color:#666;line-height:1.8;font-size:14px}.details{margin:25px 0;display:grid;gap:15px;font-size:13px}.map{min-height:350px;background:#d7d4cb;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:#555}.mapbox{background:#fff;padding:28px;max-width:310px;box-shadow:0 10px 30px #0001}.mapbox strong{display:block;font-family:Georgia,serif;font-size:23px;color:#111;margin-bottom:10px}.cta{background:#111;color:#fff;text-align:center;padding:85px 20px}.cta h2{font-family:Georgia,serif;font-size:clamp(36px,5vw,58px);font-weight:400;margin:15px auto;max-width:700px}.cta p{color:#bbb;font-size:14px;margin-bottom:28px}.footer{padding:30px 8%;background:#080808;color:#aaa;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px}.wa{position:fixed;right:22px;bottom:22px;background:#1e9e58;color:white;border-radius:50px;padding:16px 20px;font-size:12px;font-weight:bold;box-shadow:0 8px 25px #0003;z-index:8}.wa:hover{background:#147b43}.sample{font-size:10px;color:#a36f25;background:#fff5df;border:1px solid #ead5a8;padding:10px 14px;margin:0 auto 25px;max-width:760px;text-align:center}
+@media(max-width:800px){.links{display:none}.nav{height:68px;padding:0 5%}.navbtn{padding:12px 14px}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 8%}.hero-image{min-height:360px;order:-1}.trust{gap:24px}.section{padding:70px 6%}.services,.reviews{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr;grid-template-rows:220px 180px 180px}.photo:first-child{grid-row:span 2}.photo:nth-child(5){display:none}.visit{grid-template-columns:1fr;gap:25px}.visit h2{font-size:40px}.footer{justify-content:center;text-align:center}.wa{right:14px;bottom:14px}}
+</style>
+</head>
+<body>
+<div class="demo">Concept website demo · <b>Sample details need owner approval</b></div>
+<header class="nav">
+  <a class="brand" href="#">BARBER'S VILLAGE<span>THE ART OF A CLEAN CUT</span></a>
+  <nav class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a></nav>
+  <a class="navbtn" href="#book">Book a cut</a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Precision · Style · Confidence</div>
+    <h1>Look sharp.<br>Feel different.</h1>
+    <p>A great cut is more than a fresh fade. It's the confidence you carry out the door. Step into Barber's Village and make every detail count.</p>
+    <div class="hero-actions"><a class="btn light" href="#book">Book your appointment</a><a class="btn" href="#services">Explore services</a></div>
+  </div>
+  <div class="hero-image" role="img" aria-label="Modern barbershop interior"></div>
+</section>
+<div class="trust"><div><strong>01</strong>Personal attention</div><div><strong>02</strong>Clean, sharp finishes</div><div><strong>03</strong>Your style, your way</div></div>
+<section class="section" id="services">
+  <div class="section-head"><div class="eyebrow">The service menu</div><h2>Made for your look.</h2><p>From a crisp everyday cut to the full grooming experience, find the service that fits your style.</p></div>
+  <div class="sample">SAMPLE MENU — prices and exact services are placeholders. Confirm with the business before publishing.</div>
+  <div class="services">
+    <article class="service"><div class="num">01</div><h3>Classic haircut</h3><p>A clean, tailored cut finished to suit your face shape and personal style.</p><div class="price">From GH₵ 60</div></article>
+    <article class="service"><div class="num">02</div><h3>Fade & taper</h3><p>Seamless blending, sharp lines and a precise finish from every angle.</p><div class="price">From GH₵ 70</div></article>
+    <article class="service"><div class="num">03</div><h3>Beard trim</h3><p>Shape, define and tidy your beard for a clean, balanced look.</p><div class="price">From GH₵ 35</div></article>
+    <article class="service"><div class="num">04</div><h3>Haircut & beard</h3><p>The complete refresh: a fresh cut paired with a carefully shaped beard.</p><div class="price">From GH₵ 90</div></article>
+    <article class="service"><div class="num">05</div><h3>Kids' haircut</h3><p>A neat, comfortable cut with care and patience.</p><div class="price">From GH₵ 45</div></article>
+    <article class="service"><div class="num">06</div><h3>Line-up</h3><p>Bring the details into focus with a clean, precise edge-up.</p><div class="price">From GH₵ 25</div></article>
+  </div>
+</section>
+<section class="section gallery" id="gallery">
+  <div class="section-head"><div class="eyebrow">The craft, up close</div><h2>Fresh cuts. Clean details.</h2><p>A visual preview of the kind of work and atmosphere customers can expect.</p></div>
+  <div class="photos"><div class="photo" title="Barber cutting hair"></div><div class="photo" title="Barber styling hair"></div><div class="photo" title="Barbershop detail"></div><div class="photo" title="Fresh haircut"></div><div class="photo" title="Grooming detail"></div></div>
+  <p style="font-size:10px;color:#aaa;text-align:center;margin-top:18px">Demo photography — replace with Barber's Village's own haircut and shop photos.</p>
+</section>
+<section class="section" id="reviews">
+  <div class="section-head"><div class="eyebrow">Good words, good work</div><h2>People remember the feeling.</h2><p>Customer feedback helps new visitors feel confident choosing their barber.</p></div>
+  <div class="sample">REVIEW PREVIEW — illustrative sample copy, not actual customer testimonials. Replace with approved real reviews.</div>
+  <div class="reviews">
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“The attention to detail makes all the difference. I left feeling fresh.”</blockquote><small>Sample customer review</small></article>
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“Great atmosphere, a clean finish and exactly the style I asked for.”</blockquote><small>Sample customer review</small></article>
+    <article class="review"><div class="stars">★★★★★</div><blockquote>“Consistent quality every time. Definitely worth coming back for.”</blockquote><small>Sample customer review</small></article>
+  </div>
+</section>
+<section class="section visit" id="visit">
+  <div>
+    <div class="eyebrow">Your next fresh cut</div><h2>Come through.<br>Leave sharper.</h2>
+    <p>Planning a visit? Get in touch to confirm availability, opening hours and directions before you set off.</p>
+    <div class="details"><div>⌖ <b>Location:</b> Accra, Ghana — exact address to be confirmed</div><div>◷ <b>Opening hours:</b> Sample hours — confirm with the owner</div><div>☎ <b>Phone:</b> Business contact to be confirmed</div></div>
+    <a class="btn" href="#book">Message to book</a>
+  </div>
+  <div class="map"><div class="mapbox"><strong>Barber's Village</strong><p>Map preview will be connected to the verified shop address.</p><span style="font-size:11px">Accra, Ghana · Sample location</span></div></div>
+</section>
+<section class="cta" id="book"><div class="eyebrow">Your chair is waiting</div><h2>Ready for a cleaner look?</h2><p>Send a WhatsApp message to ask about appointments and availability.</p><a class="btn light" href="https://wa.me/233000000000?text=Hi%20Barber%27s%20Village%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp ↗</a><p style="font-size:10px;margin-top:18px;color:#888">Demo link only — replace the sample number with the shop's verified WhatsApp number.</p></section>
+</main>
+<footer class="footer"><div>© 2026 BARBER'S VILLAGE · CONCEPT DEMO</div><div>Designed to make every first impression count.</div></footer>
+<a class="wa" href="https://wa.me/233000000000?text=Hi%20Barber%27s%20Village%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp booking ↗</a>
+</body></html>
